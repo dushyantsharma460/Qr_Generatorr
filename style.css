@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    height: 70vh;
+    width: 100vw;
+    background: url('./media/dino.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.container {
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    background: url('./media/ball.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 20px #fff;
+}
+.container p {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.container input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #494eea;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    /* background-color: rgb(31, 30, 30); */
+}
+::placeholder{
+    color: #494eea;
+}
+.container button {
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    background: #494eea;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: url('./media/plane.png'), auto;
+    margin: 30px 0;
+    font-weight: 500;
+    position: relative;
+    top: 20px;
+}
+#imgBox {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+    padding: 5px;
+    border: 1px solid #fff;
+    position: relative;
+    bottom: 10px;
+}
+#imgBox.show-img{
+    min-height: 250px;
+    margin: 10px auto;
+    border: 2px solid fff;
+    padding: 10px;
+    position: relative;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-2px);
+    }
+    50%{
+        transform: translate(0);
+    }
+    75%{
+        transform: translate(2px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
